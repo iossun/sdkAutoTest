@@ -6,7 +6,13 @@
 #
 
 # 获取根目录
-CURRENT_DIR="../sdkAutoTest.xcodeproj";
+
+set -ex
+
+MM_HOME=$(cd $(dirname $0); pwd)
+CURRENT_DIR=${MM_HOME}/../sdkAutoTest.xcodeproj
+
+cd ${MM_HOME}
 TARGET_TEST="sdkAutoTest";
 
 if [ -d "$CURRENT_DIR" ];
