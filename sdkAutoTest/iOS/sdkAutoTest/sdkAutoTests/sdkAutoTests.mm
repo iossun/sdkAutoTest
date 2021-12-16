@@ -51,8 +51,7 @@ int add(int a,int b,int *ret){
     int error_code = add(a, b, &res);
     XCTAssertTrue(error_code == 1,"call error");
     XCTAssertTrue(res == 3,"res error");
-    
-    aacac();
+
     
 }
 

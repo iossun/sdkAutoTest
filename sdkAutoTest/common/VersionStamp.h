@@ -6,6 +6,5 @@ const char* GetVersion();
 int GetVersionMajor();
 int GetVersionMinor();
 int GetVersionFix();
-int aacac();
 
 #endif
