@@ -69,7 +69,7 @@ if [ -d "$CURRENT_DIR" ];
     # 生成单元测试报告,并且将日志文件吸入 reports.log 文件
     # xcodebuild -enableCodeCoverage YES test -project ../sdkAutoTest.xcodeproj -scheme sdkAutoTest -destination "platform=iOS Simulator,name=iPhone 8"  -resultBundlePath "../test-reports" -resultBundleVersion 3
     # echo `xcodebuild -enableCodeCoverage YES test -$WORKSPACE_TYPE ../sdkAutoTest.xcodeproj -scheme $TARGET_TEST -destination "platform=iOS Simulator,name=iPhone 8" -resultBundlePath "$ROOT_DIR/$UnitTestFileName"` > "$ROOT_DIR/reports.log";
-    xcodebuild -enableCodeCoverage YES test -${WORKSPACE_TYPE} ../sdkAutoTest.xcodeproj -scheme ${TARGET_TEST} -destination "platform=iOS Simulator,name=iPhone 8"  -resultBundlePath "$ROOT_DIR/$UnitTestFileName" -resultBundleVersion 3  > "$ROOT_DIR/reports.log"
+    xcodebuild -enableCodeCoverage YES test -${WORKSPACE_TYPE} ../sdkAutoTest.xcodeproj -scheme ${TARGET_TEST} -destination "platform=iOS Simulator,name=iPhone 8"  -resultBundlePath "$ROOT_DIR/$UnitTestFileName" -resultBundleVersion 3
     ##### ------------ END 利用系统命令生成报告 ----------------- #######
    
    ruby ./UnitTestParser/unitTestInfo.rb --xcresult-path=$ROOT_DIR/$UnitTestFileName.xcresult --output-file=result.txt

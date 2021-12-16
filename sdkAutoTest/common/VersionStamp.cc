@@ -6,7 +6,7 @@
 #define VERSION_MINOR 1
 #define VERSION_FIX 1
 
-#define SDK_GIT_VERSION 
+#define SDK_GIT_VERSION 8059d1c
 
 static std::string pixfree_version;
 
