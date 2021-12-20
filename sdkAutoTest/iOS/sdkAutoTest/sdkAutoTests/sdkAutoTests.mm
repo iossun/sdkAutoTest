@@ -15,14 +15,7 @@
 @implementation sdkAutoTests
 
 
-int add(int a,int b,int *ret){
-    int code_OK = 1;
-//    if (<#condition#>) {
-//        return  -1;
-//    }
-    *ret = a + b;
-    return code_OK;
-}
+
 
 - (void)setUp {
     // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -52,8 +45,9 @@ int add(int a,int b,int *ret){
     XCTAssertTrue(error_code == 1,"call error");
     XCTAssertTrue(res == 3,"res error");
 
-    
+    printf("----- testAddFun success ------\n");
 }
+
 
 
 //-(void)aaaaaccc{
@@ -69,14 +63,4 @@ int add(int a,int b,int *ret){
 //    XCTAssertTrue(error_code == 1,"call error");
 //    XCTAssertTrue(res == 4,"res error");
 //}
-
-
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
-
 @end

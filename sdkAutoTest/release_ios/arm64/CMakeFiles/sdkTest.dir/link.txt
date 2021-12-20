@@ -1,1 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -o libsdkTest.a CMakeFiles/sdkTest.dir/Common/VersionStamp.cc.o 

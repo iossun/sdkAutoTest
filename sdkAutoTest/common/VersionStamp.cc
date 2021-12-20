@@ -6,7 +6,7 @@
 #define VERSION_MINOR 1
 #define VERSION_FIX 1
 
-#define SDK_GIT_VERSION 8059d1c
+#define SDK_GIT_VERSION 78a99cf
 
 static std::string pixfree_version;
 
@@ -23,3 +23,19 @@ int GetVersionMajor() { return VERSION_MAJOR; }
 int GetVersionMinor() { return VERSION_MINOR; }
 int GetVersionFix() { return VERSION_FIX; }
 
+int add(int a,int b,int *ret){
+    int code_OK = 1;
+//    if (<#condition#>) {
+//        return  -1;
+//    }
+    *ret = a + b;
+    return code_OK;
+}
+int sub(int a,int b,int *ret){
+    int code_OK = 1;
+//    if (<#condition#>) {
+//        return  -1;
+//    }
+    *ret = a - b;
+    return code_OK;
+}

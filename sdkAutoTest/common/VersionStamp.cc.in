@@ -23,3 +23,19 @@ int GetVersionMajor() { return VERSION_MAJOR; }
 int GetVersionMinor() { return VERSION_MINOR; }
 int GetVersionFix() { return VERSION_FIX; }
 
+int add(int a,int b,int *ret){
+    int code_OK = 1;
+//    if (<#condition#>) {
+//        return  -1;
+//    }
+    *ret = a + b;
+    return code_OK;
+}
+int sub(int a,int b,int *ret){
+    int code_OK = 1;
+//    if (<#condition#>) {
+//        return  -1;
+//    }
+    *ret = a - b;
+    return code_OK;
+}
